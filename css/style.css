@@ -248,16 +248,17 @@ img {
 /* article  */
 .article{
   margin: 3rem;
-  justify-content: center;
+  text-align: justify;
 }
 
-.article h2{
+.article h3{
   text-align: center;
+  font-weight: 600;
 }
+ article{
+   margin-bottom: 4rem;
+ }
 
-/* .article p{
-  text-align: center;
-} */
 
 @media only screen and (max-width: 992px) {
   #posts {
