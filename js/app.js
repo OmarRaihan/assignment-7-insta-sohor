@@ -124,7 +124,7 @@ const createPost = (post) => {
                       <a class="post__name--underline" href="#">
                           ${post.comments?.user}
                       </a>
-                      ${post.comments?.text}
+                      ${posts.comments?.text}
                     </small>
                   </div>
                   <span class="post__date-time">30 minutes ago</span>
@@ -154,6 +154,7 @@ const displayLikedPosts = () => {
 };
 
 const displayReportedPosts = () => {
+  document.getElementById( "reported" ).innerHTML = "";
     const reportedPosts = getReportedPosts();
     reportedPosts.forEach((post) => {
         const div = createPost(post);
@@ -164,6 +165,7 @@ const displayReportedPosts = () => {
 const loadPosts = async () =>{
   let data = await fetch('../data/posts.json');
   posts = await data.json();
+  console.log(data);
   showPosts(posts);
 }
 
