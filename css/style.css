@@ -245,6 +245,20 @@ img {
   display: none;
 }
 
+/* article  */
+.article{
+  margin: 3rem;
+  justify-content: center;
+}
+
+.article h2{
+  text-align: center;
+}
+
+/* .article p{
+  text-align: center;
+} */
+
 @media only screen and (max-width: 992px) {
   #posts {
     grid-template-columns: repeat(2, 1fr);
